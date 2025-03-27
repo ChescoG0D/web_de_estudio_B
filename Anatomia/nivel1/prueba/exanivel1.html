@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exanivel1.css">
+    <title>Examen Nivel 1</title>
+</head>
+<body>
+    
+    <div class="contenido-nivel">
+        
+        <div class="nota" id="nota-final">Nota Final: -/20</div>
+        <h3>Preguntas de Verdadero/Falso</h3>
+        
+        <div id="preguntas">
+        <div id="preguntas-vf"></div>
+        <hr>
+
+        <h3>Preguntas de Selección Múltiple</h3>
+        <div id="preguntas-sm"></div>
+        <hr>
+
+        <h3>Preguntas Abiertas</h3>
+        <div id="preguntas-abiertas"></div>
+        <hr>
+
+        <h3>Resultados</h3>
+        <div id="resultados">
+            <p>Preguntas Correctas: <span id="correctas">0</span></p>
+            <p>Preguntas Incorrectas: <span id="incorrectas">0</span></p>
+            <div id="explicaciones"></div>
+        </div>
+        <button id="finalizar" onclick="evaluarExamen()">Finalizar Examen</button>
+    </div>
+    </div>
+    <script src="exanivel1.js"></script>
+</body>
+</html>
