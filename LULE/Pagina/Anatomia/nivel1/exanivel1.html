@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exanivel1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenido-nivel">
+    <h3>Preguntas de Verdadero/Falso</h3>
+        <div class="pregunta-mid">
+            <div class="pregunta pregunta-espacio">
+                <p>1. El sistema óseo está compuesto por 206 huesos en el cuerpo humano. (V/F)</p>
+                <input type="text" id="pregunta1">
+                <button onclick="verificarRespuesta('pregunta1', 'V')">Comprobar</button>
+                <p id="resultado1"></p>
+            </div>
+            <div class="pregunta pregunta-espacio">
+                <p>2. El corazón se encuentra ubicado en el abdomen. (V/F)</p>
+                <input type="text" id="pregunta2">
+                <button onclick="verificarRespuesta('pregunta2', 'F')">Comprobar</button>
+                <p id="resultado2"></p>
+            </div>
+        </div>
+        <br><br>
+        <div class="pregunta-mid">
+            <div class="pregunta pregunta-espacio">
+                <p>3. La tibia es el hueso más largo del cuerpo humano. (V/F)</p>
+                <input type="text" id="pregunta3">
+                <button onclick="verificarRespuesta('pregunta3', 'F')">Comprobar</button>
+                <p id="resultado3"></p>
+            </div>
+            <div class="pregunta pregunta-espacio">
+                <p>4. El diafragma separa la cavidad torácica de la abdominal. (V/F)</p>
+                <input type="text" id="pregunta4">
+                <button onclick="verificarRespuesta('pregunta4', 'V')">Comprobar</button>
+                <p id="resultado4"></p>
+            </div>
+        </div>
+        <br><br>
+        <div class="pregunta-mid">
+            <div class="pregunta pregunta-espacio">
+                <p>5. El encéfalo está protegido por la columna vertebral. (V/F)</p>
+                <input type="text" id="pregunta5">
+                <button onclick="verificarRespuesta('pregunta5', 'F')">Comprobar</button>
+                <p id="resultado5"></p>
+            </div>
+            <div class="pregunta pregunta-espacio">
+                <p>6. El hígado es el órgano más grande del cuerpo humano. (V/F)</p>
+                <input type="text" id="pregunta6">
+                <button onclick="verificarRespuesta('pregunta6', 'V')">Comprobar</button>
+                <p id="resultado6"></p>
+            </div>
+        </div>
+        <br><br>
+        <div class="pregunta-mid">
+            <div class="pregunta pregunta-espacio">
+                <p>7. La sangre transporta oxígeno y nutrientes a las células del cuerpo. (V/F)</p>
+                <input type="text" id="pregunta7">
+                <button onclick="verificarRespuesta('pregunta7', 'V')">Comprobar</button>
+                <p id="resultado7"></p>
+            </div>
+            <div class="pregunta pregunta-espacio">
+                <p>8. El esqueleto axial está formado por las extremidades del cuerpo humano. (V/F)</p>
+                <input type="text" id="pregunta8v">
+                <button onclick="verificarRespuesta('pregunta8', 'F')">Comprobar</button>
+                <p id="resultado8v"></p>
+            </div>
+        </div>
+        <br><br>
+        <div class="pregunta-mid">
+            <div class="pregunta pregunta-espacio">
+                <p>9. El páncreas produce insulina para regular el azúcar en la sangre. (V/F)</p>
+                <input type="text" id="pregunta9">
+                <button onclick="verificarRespuesta('pregunta9', 'V')">Comprobar</button>
+                <p id="resultado9"></p>
+            </div>
+            <div class="pregunta pregunta-espacio">
+                <p>10. El sistema linfático forma parte del sistema circulatorio. (V/F)</p>
+                <input type="text" id="pregunta10">
+                <button onclick="verificarRespuesta('pregunta10', 'V')">Comprobar</button>
+                <p id="resultado10"></p>
+            </div>
+        </div>
+        <hr>
+        <h3>Preguntas de Selección Múltiple</h3>
+        <br>
+        <div class="pregunta-mid">
+        <div class="pregunta pregunta-espacio">
+            <p>¿Cuál es el órgano encargado de bombear la sangre en el cuerpo humano?</p>
+            <form id="selecpre1">
+                <label><input type="radio" name="opcion3" value="PULMONES"> Pulmones</label><br>
+                <label><input type="radio" name="opcion3" value="HÍGADO"> Hígado</label><br>
+                <label><input type="radio" name="opcion3" value="CORAZÓN"> Corazón</label><br>
+                <label><input type="radio" name="opcion3" value="RIÑONES"> Riñones</label><br>
+                <br>
+                <button type="button" onclick="verificarSeleccion('selecpre1', 'CORAZÓN')">Comprobar</button>
+                <p id="selecres1"></p>
+            </form>
+        </div>
+
+        <div class="pregunta pregunta-espacio">
+            <p>¿Cuál de estos huesos se encuentra en el cráneo?</p>
+            <form id="selecpre2">
+                <label><input type="radio" name="opcion4" value="CÚBITO"> Cúbito</label><br>
+                <label><input type="radio" name="opcion4" value="FÉMUR"> Fémur</label><br>
+                <label><input type="radio" name="opcion4" value="FRONTAL"> Frontal</label><br>
+                <label><input type="radio" name="opcion4" value="TIBIA"> Tibia</label><br>
+                <br>
+                <button type="button" onclick="verificarSeleccion('selecpre2', 'FRONTAL')">Comprobar</button>
+                <p id="selecres2"></p>
+            </form>
+        </div>
+    </div>
+
+        <h3>Preguntas Abiertas</h3>
+        <div class="pregunta">
+            <p> Menciona tres sistemas principales del cuerpo humano.</p>
+            <input type="text" id="abpre1" data-respuesta="NERVIOSO, DIGESTIVO, CIRCULATORIO">
+            <button onclick="verificarAbierta('abpre1')">Comprobar</button>
+            <p id="vfres1"></p>
+        </div>  
+        
+        <div class="pregunta">
+            <p> ¿Qué función cumple el diafragma en la respiración?</p>
+            <input type="text" id="abpre2" data-respuesta="CONTROLAR LA RESPIRACIÓN, CONTROLAR LA RESPIRACION">
+            <button onclick="verificarAbierta('abpre2')">Comprobar</button>
+            <p id="vfres2"></p>
+        </div>    
+        
+        <div class="pregunta">
+            <p> ¿Cuál es el hueso más largo del cuerpo humano?</p>
+            <input type="text" id="abpre3" data-respuesta="FÉMUR, FEMUR">
+            <button onclick="verificarAbierta('abpre3')">Comprobar</button>
+            <p id="vfres3"></p>
+        </div>
+        
+        <div class="pregunta">
+            <p> ¿Qué estructura conecta los músculos con los huesos?</p>
+            <input type="text" id="abpre4" data-respuesta="TENDONES, LOS TENDONES, TENDÓN">
+            <button onclick="verificarAbierta('abpre4')">Comprobar</button>
+            <p id="vfres4"></p>
+        </div>
+    </div>
+        <script src="exanivel1.js"></script>
+</body>
+</html>

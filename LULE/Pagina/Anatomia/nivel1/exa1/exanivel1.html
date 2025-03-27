@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exanivel1.css">
+    <title>Examen Nivel 1</title>
+</head>
+<body>
+    <div class="contenido-nivel">
+        
+        <div class="nota" id="nota-final">Nota Final: -/20</div>
+        
+        <h1 style="text-align: center;color: #4CAF50;">Examen del Nivel 1</h1>
+    
+        <p>A continuación, realizaremos un examen para evaluar los conocimientos adquiridos hasta este punto. El objetivo es reforzar lo aprendido y comprobar la comprensión de los conceptos fundamentales.</p>
+    
+        <h2 style="color: #4CAF50;">Instrucciones</h2>
+        <ul>
+            <li>Lee cuidadosamente cada pregunta.</li>
+            <li>Selecciona la respuesta que consideres más correcta.</li>
+            <li>Marca tu respuesta claramente.</li>
+            <li>Revisa tus respuestas antes de entregar el examen.</li>
+        </ul>
+        <h3>Preguntas de Verdadero/Falso</h3>
+        <div id="preguntas">
+        <div id="preguntas-vf"></div>
+        <hr>
+
+        <h3>Preguntas de Selección Múltiple</h3>
+        <div id="preguntas-sm"></div>
+        <hr>
+
+        <h3>Preguntas Abiertas</h3>
+        <div id="preguntas-abiertas"></div>
+        <hr>
+
+        <h3>Resultados</h3>
+        <div id="resultados">
+            <p>Preguntas Correctas: <span id="correctas">0</span></p>
+            <p>Preguntas Incorrectas: <span id="incorrectas">0</span></p>
+            <p id="mensaje-final"></p> 
+            <div id="explicaciones"></div>
+        </div>
+        <button id="finalizar" onclick="evaluarExamen()">Finalizar Examen</button>
+    </div>
+    </div>
+    <script src="exanivel1.js"></script>
+</body>
+</html>
